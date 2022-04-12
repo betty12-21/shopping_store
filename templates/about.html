@@ -1,0 +1,140 @@
+<style>
+
+.btn-primary {
+    color: #fff;
+    background-color: #ffa726 !important;
+}
+.one{
+  color:blue;
+
+}
+</style>
+
+
+
+<br><br><br>
+<div class="container-fluid wow fadeInUp">
+<!-- Grid row -->
+<div class="row">
+  <!-- Grid column -->
+ 
+  <!-- Grid column -->
+  <div class="col-md-10 col-lg-9 col-xl-6">
+
+
+    <style>
+      .indigo {
+    background-color: #ffa726 !important;
+}
+
+
+    </style>
+
+
+
+    <!--Panel-->
+    <div class="card mb-3" ng-repeat="x in emp">
+      <h3 class="card-header indigo white-text text-uppercase text-center">Authors {{x.name}}</h3>
+      <div class="card-body">
+        <div class="media d-block d-md-flex mt-md-0 mt-4 mb-4">
+            <img class="  rounded-circle" ng-src=" {{x.photo}}" style="height:110px;width:auto" />
+
+          <div class="media-body ml-md-3 ml-0">
+            <p text-align="justify">{{x. comm}}
+            </p>
+            <div class="text-center text-md-left">
+              <button  class="btn  btn-rounded btn-md" style="background-color: #ffa726; color:#fff">Read more</button>
+            </div>
+          </div>
+        </div>
+
+      
+      </div>
+    </div>
+    <!--/.Panel-->
+
+  </div>
+  <!-- Grid column -->
+  <div class="col-md-10 col-lg-9 col-xl-6">
+
+   
+    <section class="mb-4 "  style="margin-left:50px">
+
+     
+  
+      <div class="row ">
+        <h1>leave comment to us</h1>
+
+   <h4 class="h5-responsive font-weight text-center my-4">Do you have any questions? Please do not hesitate to <br>contact us directly.
+       .</h4>
+       
+          <!--Grid column-->
+          <div class="col-md-9 mb-md-0 mb-5 ">
+              <form id="contact-form"  name="contact-form" action="mail.php" method="POST" ng-submit="add()">
+  
+                  <!--Grid row--> 
+                  <div class="row">
+  
+                      <!--Grid column-->
+                      <div class="col-md-12">
+                          <div class="md-form mb-0">
+                              <input type="text" id="name" name="name" class="form-control" ng-model="name">
+                              <label for="name" class="">Your name</label>
+                          </div>
+                      </div>
+                      <!--Grid column-->
+  
+                  </div>
+                  <!--Grid row-->
+  
+                  <!--Grid row-->
+                  <div class="row">
+                      <div class="col-md-12 ">
+                          <div class="md-form mb-0">
+                            <textarea type="text" id="message" name="comm" rows="2" class="form-control md-textarea" ng-model="comm"></textarea>
+                            <label for="message">Your message</label>
+                          </div>
+                      </div>
+                  </div>
+                  <!--Grid row-->
+  
+                  <!--Grid row-->
+                  <div class="row">
+                      <!--Grid column-->
+                      <div class="col-md-12">
+                          <div class="md-form">
+                            <input type="file" id="myfile" name="myfile">
+                          </div>
+                      </div>
+                  </div>
+                  <!--Grid row-->
+              </form>
+                   
+              <div class="text-center text-md-left">
+              
+                  <a type="submit" ng-submit="add()" class="btn btn-primary"  ng-click="add()"   onclick="$event.preventDefault();" style="height: 100%;width:100%" >Send</a>
+                
+                </div>
+              
+          </div>
+          <!--Grid column-->
+  
+     
+  
+      </div>
+  
+  </section>
+
+  </div>
+  <!-- Grid column -->
+
+</div>
+<!-- Grid row -->
+</div>
+
+
+<style>
+  .carddemoBasicUsage .card-media {
+  background-color: #999999; }
+</style>
+        

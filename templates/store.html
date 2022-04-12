@@ -1,0 +1,519 @@
+<style>
+  .btn-unique {
+    color: #fff;
+    background-color: #cc861e !important;
+  }
+
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #ffa726;
+    border-color: #dee2e6 #dee2e6 #fff;
+    
+}
+
+
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgb(255 167 38);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.hide {
+    display: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #3e7ad4 !important;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #ffffff;
+    background-color: #ffa726;
+    border-color: #ffffff #dee2e6 #fff;
+}
+  </style>
+  <style>
+
+    .modal-dialog.modal-notify.modal-info .modal-header {
+        background-color: #cc861e;
+    }
+    .btn-info {
+        color: #fff;
+        background-color: #cc861e !important;
+    }
+    .btn-outline-info {
+        color: #33b5e5 !important;
+        background-color: transparent !important;
+        border: 2px solid #cc861e  !important;
+    }
+    </style>
+    
+    <script>
+      setTimeout(function(){ 
+    $('#modalPush'). modal('show') 
+    }, 3000);
+    </script>
+  <br><br><br>
+<center>
+  <div class="hid" id="no">
+  <div class="spinner-grow text-danger" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div class="spinner-grow text-warning" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+  <div class="spinner-grow text-info" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div>
+  </center>
+
+
+
+
+
+  
+<div id="second-box" class="hide" ><!-- big div -->
+
+<br>
+  
+<style>
+   #do {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    color: #ffff;
+}
+</style>
+<div class="row">
+  <div class="col-lg-2 col-md-2 col-sm-2">
+   
+    <!--Accordion wrapper-->
+<div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+  <!-- Accordion card -->
+  <div class="card">
+
+    <!-- Card header -->
+    <div class="card-header" role="tab" id="headingOne1">
+      <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"ng-click="$event.preventDefault()"
+
+        aria-controls="collapseOne1">
+        <h5 class="mb-0" id="do">
+          Prices <i class="fas fa-angle-down rotate-icon"></i>
+        </h5>
+      </a>
+    </div>
+
+    <!-- Card body -->
+    <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+      data-parent="#accordionEx">
+      <div class="card-body">
+        <a href="#" ng-click="$event.preventDefault()" class="list-group-item">4000-5000</a>
+        <a href="#" ng-click="$event.preventDefault()" class="list-group-item">7000-8000</a>
+        <a href="#" ng-click="$event.preventDefault()" class="list-group-item">9000-10000</a>
+      </div>
+    </div>
+
+  </div>
+  <!-- Accordion card -->
+
+  <!-- Accordion card -->
+  <div class="card">
+
+    <!-- Card header -->
+    <div class="card-header" role="tab" id="headingTwo2">
+      <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"ng-click="$event.preventDefault()"
+
+        aria-expanded="false" aria-controls="collapseTwo2">
+        <h5 class="mb-0" id="do">
+          Condition<i class="fas fa-angle-down rotate-icon"></i>
+        </h5>
+      </a>
+    </div>
+
+    <!-- Card body -->
+    <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+      data-parent="#accordionEx">
+      <div class="card-body">
+        <a href="#" ng-click="$event.preventDefault()" class="list-group-item">New</a>
+        <a href="#" ng-click="$event.preventDefault()" class="list-group-item">Old</a>
+      </div>
+    </div>
+
+  </div>
+  <!-- Accordion card -->
+
+  <!-- Accordion card -->
+  <div class="card">
+
+    <!-- Card header -->
+    <div class="card-header" role="tab" id="headingThree3">
+      <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"ng-click="$event.preventDefault()"
+
+        aria-expanded="false" aria-controls="collapseThree3">
+        <h5 class="mb-0" id="do">
+          Companies <i class="fas fa-angle-down rotate-icon"></i>
+        </h5>
+      </a>
+    </div>
+
+    <!-- Card body -->
+    <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
+      data-parent="#accordionEx">
+      <div class="card-body">
+        <a href="#" ng-click="$event.preventDefault()" class="list-group-item">Toshiba</a>
+        <a href="#" ng-click="$event.preventDefault()" class="list-group-item">HP</a>
+      </div>
+    </div>
+
+  </div>
+  <!-- Accordion card -->
+
+</div>
+<!-- Accordion wrapper -->
+  </div>
+  <style>
+    a{
+      color:#ffa726;
+    }
+  </style>
+  <div class="col-lg-10">
+<nav>
+  <div class="nav nav-tabs md-tabs" id="nav-tab" role="tablist" >
+    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"ng-click="$event.preventDefault()"
+      aria-controls="nav-home" aria-selected="true" >Laptop</a>
+    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"ng-click="$event.preventDefault()"
+      aria-controls="nav-profile" aria-selected="false">Case</a>
+    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"ng-click="$event.preventDefault()"
+      aria-controls="nav-contact" aria-selected="false">Smartphone</a>
+  </div>
+</nav>
+<div class="tab-content pt-5" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+    
+<div class="row  ">
+  
+  <!-- Card Narrower -->
+  <div id="oo" class=" animated zoomIn  card card-cascade narrower col-xs-12 col-sm-6 col-md-4 col-lg-3  " ng-repeat="x in products|filter:{name:'laptop'}"  >
+  
+    <!-- Card image -->
+    <div class="view view-cascade overlay">
+      <br>
+      <img  class="card-img-top   img-thumbnail  " src="{{x.img}}"  style="width:100%;height: 200px"
+        alt="Card image cap">
+       <br>
+      <a>
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+    <!-- Card content -->
+    <div class="card-body card-body-cascade" >
+      <center>
+      <!-- Label -->
+      <h4 class="pink-text pb-2 pt-1"> <i class="fas fa-laptop"></i>{{x.name}}</h4>
+      <!-- Title -->
+      <h5> {{"Company: "+ x.company}}</h5> 
+        
+     
+            <br>   
+          
+    <br>
+      <h6 class="text-decoration-line-through">Old price : 1000 $</h6>
+      
+      <h4> {{"Price: "+ x.price+" $"}}</h4>
+    </center>
+        <!-- Button trigger modal-->
+<button type="button" class="btn btn-success"  style="border-radius:4px; width:70%  " ng-click='preAddToBasket(x)'>Buy New</button>
+<a style="color: #dd4b39; align-items: right ;" href="#!" role="button"
+><i class="fas fa-heart fa-lg"></i
+></a>
+<!-- <i class="far fa-heart fa-lg"></i -->
+    </div>
+  
+  </div>
+  <!-- Card Narrower -->
+
+
+</div>
+  </div>
+  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+    <div class="row  ">
+  
+      <!-- Card Narrower -->
+      <div id="oo" class=" animated zoomIn  card card-cascade narrower col-xs-12 col-sm-6 col-md-4 col-lg-3  " ng-repeat="x in products|filter:{name:'case'}"  >
+    
+           <!-- Card image -->
+    <div class="view view-cascade overlay">
+      <br>
+      <img  class="card-img-top   img-thumbnail  " src="{{x.img}}"  style="width:100%;height: 200px"
+        alt="Card image cap">
+       <br>
+      <a>
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+    <!-- Card content -->
+    <div class="card-body card-body-cascade" >
+      <center>                         
+      <!-- Label -->
+      <h4 class="pink-text pb-2 pt-1"> <i class="fas fa-hdd"></i> {{x.name}}</h4>
+      <!-- Title -->
+      <h5> {{"Company: "+ x.company}}</h5> 
+        
+     
+            <br>   
+          
+    <br>
+      <h6 class="text-decoration-line-through">Old price : 1000 $</h6>
+      
+      <h4> {{"Price: "+ x.price+" $"}}</h4>
+    </center>
+        <!-- Button trigger modal-->
+<button type="button" class="btn btn-success"  style="border-radius:4px; width:70%  " ng-click='preAddToBasket(x)'>Buy New</button>
+<a style="color: #dd4b39; align-items: right ;" href="#!" role="button"
+><i class="fas fa-heart fa-lg"></i
+></a>
+<!-- <i class="far fa-heart fa-lg"></i -->
+    </div>
+      
+      </div>
+      <!-- Card Narrower -->
+    
+    
+    </div>
+  </div>
+  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+    <div class="row  ">
+  
+      <!-- Card Narrower -->
+      <div id="oo" class=" animated zoomIn  card card-cascade narrower col-xs-12 col-sm-6 col-md-4 col-lg-3  " ng-repeat="x in products|filter:{name:'smart'}"  >
+    
+            <!-- Card image -->
+    <div class="view view-cascade overlay">
+      <br>
+      <img  class="card-img-top   img-thumbnail  " src="{{x.img}}"  style="width:100%;height: 200px"
+        alt="Card image cap">
+       <br>
+      <a>
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+    <!-- Card content -->
+    <div class="card-body card-body-cascade" >
+      <center>                               
+      <!-- Label -->
+      <h4 class="pink-text pb-2 pt-1"> <i class="fas fa-mobile"></i> {{x.name}}</h4>
+      <!-- Title -->
+      <h5> {{"Company: "+ x.company}}</h5> 
+        
+     
+            <br>   
+          
+    <br>
+      <h6 class="text-decoration-line-through">Old price : 1000 $</h6>
+      
+      <h4> {{"Price: "+ x.price+" $"}}</h4>
+    </center>
+        <!-- Button trigger modal-->
+<button type="button" class="btn btn-success"  style="border-radius:4px; width:70%  " ng-click='preAddToBasket(x)'>Buy New</button>
+<a style="color: #dd4b39; align-items: right ;" href="#!" role="button"
+><i class="fas fa-heart fa-lg"></i
+></a>
+<!-- <i class="far fa-heart fa-lg"></i -->
+    </div>
+      
+      </div>
+      <!-- Card Narrower -->
+    
+    
+    </div> 
+  </div>
+</div>
+
+  </div>
+  
+</div><!-- big div -->
+
+
+
+  
+
+<!--Modal: modalYT-->
+<div class="modal fade " id="basket" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Body-->
+      <div class="modal-body mb-0 p-0">
+
+      <table class="table table-hover">
+        <tr ng-repeat="item in basket|totFilter">
+          <th>{{$index+1}}</th>
+          <th><img src="{{item.img}}" style="width:64px"> </th>
+          <th>{{item.name}}</th>
+          <th>
+            <button class="btn btn-success btn-sm" ng-click="item.qty=item.qty+1"><h6>+</h6></button>
+            <input style="width: 20%; display: inline;" type="number" class="form-control" ng-model="item.qty">
+            <button class="btn btn-danger btn-sm" ng-click="item.qty=item.qty-1"><h6>-</h6></button>
+          </th>
+          <th>   <h5>price</h5>{{item.price}}</th>
+          <th><b> <h5>total price</h5> {{item.price*item.qty}}</b></th>
+        </tr>
+        <tr>
+          <th colspan="5"></th>
+          <th>total cost:{{totPrice}}</th>
+        </tr>
+      </table>
+
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer justify-content-center flex-column flex-md-row">
+        <span class="mr-4">Spread the word!</span>
+        <div>
+          <a type="button" class="btn-floating btn-sm btn-fb">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <!--Twitter-->
+          <a type="button" class="btn-floating btn-sm btn-tw">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <!--Google +-->
+          <a type="button" class="btn-floating btn-sm btn-gplus">
+            <i class="fab fa-google-plus-g"></i>
+          </a>
+          <!--Linkedin-->
+          <a type="button" class="btn-floating btn-sm btn-ins">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+        <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"
+          data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4"
+          data-dismiss="modal">purchase</button>
+
+
+      </div>
+
+    </div>
+    <!--/.Content-->
+
+  </div>
+</div>
+  
+
+
+  <!--Modal: modalPush-->
+  <div class="modal fade animated zoomIn" id="modalPush" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-notify modal-info" role="document">
+      <!--Content-->
+      <div class="modal-content text-center">
+        <!--Header-->
+        <div class="modal-header d-flex justify-content-center">
+          <p class="heading">Be always up to date</p>
+        </div>
+  
+        <!--Body-->
+        <div class="modal-body">
+  
+          <i class="fas fa-bell fa-4x animated rotateIn mb-4" style="color: #ffa726;" ></i>
+  
+          <h4>Do you want to receive notification about the new products?</h4>
+  
+        </div>
+  
+        <!--Footer-->
+        <div class="modal-footer flex-center">
+          <a href="https://mdbootstrap.com/docs/standard/pro/" class="btn btn-info">Yes</a>
+          <a type="button" class="btn btn-outline-danger waves-effe0ct" data-dismiss="modal"  >No</a>
+        </div>
+      </div>
+      <!--/.Content-->
+    </div>
+  </div>
+  <!--Modal: modalPush-->
+  
+  
+  
+
+
+
+<!-- Modal: modalQuickView -->
+<div class="modal fade" id="singleProduct" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-lg-5">
+            <!--Carousel Wrapper-->
+          
+              <!--Slides-->
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <img class="d-block w-100"
+                  src="{{selectedProduct.img}}" 
+                    alt="First slide">
+
+                </div>
+
+              </div>
+              <!--/.Slides-->
+              <!--Controls-->
+             
+
+            <!--/.Carousel Wrapper-->
+          </div>
+          <div class="col-lg-7">
+            <h2 class="h2-responsive product-name">
+              <strong> {{selectedProduct.name}}</strong>
+            </h2>
+            <h4 class="h4-responsive">
+              <span class="green-text">
+                <strong>${{selectedProduct.price}}</strong>
+              </span>
+              <span class="grey-text">
+              
+              </span>
+            </h4>
+
+        
+
+            <!-- Add to Cart -->
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+
+              
+                  <label>Quantity</label>
+                  <input type="number" class="form-control" ng-model="selectedProduct.qty">
+                </div>
+                <div class="col-md-6 alert alert-info"></div>
+                  ${{selectedProduct.price*selectedProduct.qty}}
+
+                </div>
+              </div>
+              <div class="text-center">
+
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button class="btn btn-primary" ng-click="addToBasket()">Add to cart
+                  <i class="fas fa-cart-plus ml-2" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <!-- /.Add to Cart -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
